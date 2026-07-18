@@ -2,7 +2,7 @@
 
 ## Etymology and Foundation
 
-The word **holon** (Ancient Greek: ὅλον) is a combination of the Greek *holos* (ὅλος) meaning 'whole', with the suffix *-on* which denotes a particle or part (as in proton and neutron). 
+The word **holon** (Ancient Greek: ὅλον) is a combination of the Greek *holos* (ὅλος) meaning 'whole', with the suffix *-on* which denotes a particle or part (as in proton and neutron).
 
 Holons are self-reliant units that possess a degree of independence and can handle contingencies without asking higher authorities for instructions (i.e., they have a degree of autonomy). These holons are also simultaneously subject to control from one or more of these higher authorities. The first property ensures that holons are stable forms that are able to withstand disturbances, while the latter property signifies that they are intermediate forms, providing a context for the proper functionality for the larger whole.
 
@@ -83,7 +83,7 @@ Examples:
 
 **User-Facing**: Should prioritize clarity and approachability
 - "HolonOS" (core system name that reflects philosophy)
-- "Connected Network" (not "HolonMesh") 
+- "Connected Network" (not "HolonMesh")
 - "Backup Circle" (not "ReplicationSphere")
 
 **Technical/Developer-Facing**: Can use more sophisticated etymological naming
