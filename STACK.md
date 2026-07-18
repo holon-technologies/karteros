@@ -873,7 +873,7 @@ The slice should prove:
 ## Evidence and Decision Status
 
 - **Confirmed:** The architecture, constraints, and technology choices in this document come from the Holon Technologies reusable baseline supplied for revision 1.1.
-- **Confirmed:** The internal technology names follow the repository's [Naming Conventions](specifications/NAMING_CONVENTIONS.md), which prefer meaningful Holon, Greek, or Latin names where they improve clarity.
+- **Confirmed:** The internal technology names follow the repository's [Naming Conventions](docs/naming-conventions.md), which prefer meaningful Holon, Greek, or Latin names where they improve clarity.
 - **Application-specific:** Decisions listed in [ADR Requirements and Open Questions](#adr-requirements-and-open-questions) are deliberately unresolved here and must be recorded per application.
 - **Product-specific:** Features, domain entities, workflows, and integrations remain outside this baseline and belong in each application's `SPEC.md`.
 

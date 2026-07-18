@@ -5,6 +5,14 @@ Karteros is Holon Technologies' resilient local-first application stack.
 This repository is the public, executable home of its architecture, reusable
 Rust patterns, conformance tests, and reference implementations.
 
+## Name
+
+*Karteros* (Ancient Greek: καρτερός) means steadfast, enduring, or tough. The
+name describes the stack's defining promise: applications retain useful local
+state, withstand partial failure, and recover without losing accepted work.
+Project names follow the public [Holon Technologies naming
+conventions](docs/naming-conventions.md).
+
 > [!IMPORTANT]
 > Karteros is experimental. The workspace is not published to crates.io and its
 > APIs may change while patterns are validated in real applications. Pin Git

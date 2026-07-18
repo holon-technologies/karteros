@@ -120,7 +120,7 @@ dependencies = [
 
 [[package]]
 name = "karteros-crash-recovery"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "karteros-operation",
  "karteros-outbox",
@@ -131,11 +131,11 @@ dependencies = [
 
 [[package]]
 name = "karteros-operation"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 name = "karteros-outbox"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "karteros-operation",
  "rusqlite",
@@ -144,7 +144,7 @@ dependencies = [
 
 [[package]]
 name = "karteros-testkit"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 name = "libc"
