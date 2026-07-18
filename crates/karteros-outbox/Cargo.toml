@@ -1,0 +1,19 @@
+[package]
+name = "karteros-outbox"
+description = "Experimental crash-resistant SQLite outbox pattern for Karteros"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[dependencies]
+karteros-operation.workspace = true
+rusqlite.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[lib]
+path = "src/lib.rs"

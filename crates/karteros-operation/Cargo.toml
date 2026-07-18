@@ -1,0 +1,12 @@
+[package]
+name = "karteros-operation"
+description = "Experimental accepted-operation contracts for Karteros"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[lib]
+path = "src/lib.rs"

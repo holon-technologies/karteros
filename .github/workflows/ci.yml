@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Install pinned Rust toolchain
+        run: rustup toolchain install 1.97.1 --profile minimal --component clippy,rustfmt
+
+      - name: Check formatting
+        run: cargo fmt --all -- --check
+
+      - name: Lint
+        run: cargo clippy --workspace --all-targets --all-features -- -D warnings
+
+      - name: Test workspace
+        run: cargo test --workspace --all-features
+
+      - name: Test documentation
+        run: cargo test --doc --workspace
+
+      - name: Check repository diff
+        run: git diff --check
+
+      - name: Scan for committed secrets
+        run: |
+          if git grep -InE \
+            '(gh[p]_|github_[p]at_|s[k]-[A-Za-z0-9]|BEGIN [A-Z ]*PRIVATE K[E]Y)'; then
+            echo "Potential secret material found" >&2
+            exit 1
+          fi

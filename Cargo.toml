@@ -1,0 +1,17 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "examples/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.97.1"
+license = "Apache-2.0"
+repository = "https://github.com/holon-technologies/karteros"
+
+[workspace.dependencies]
+karteros-operation = { path = "crates/karteros-operation" }
+karteros-outbox = { path = "crates/karteros-outbox" }
+karteros-testkit = { path = "crates/karteros-testkit" }
+rusqlite = { version = "0.40.1", features = ["bundled"] }
+tempfile = "3.27.0"

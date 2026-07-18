@@ -1,0 +1,22 @@
+[package]
+name = "karteros-crash-recovery"
+description = "Process-level crash recovery reference slice for Karteros"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[dependencies]
+karteros-operation.workspace = true
+karteros-outbox.workspace = true
+karteros-testkit.workspace = true
+rusqlite.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[[bin]]
+name = "karteros-crash-recovery"
+path = "src/main.rs"
